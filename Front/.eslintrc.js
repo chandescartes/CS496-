@@ -37,7 +37,6 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },
-=======
     root: true,
     parser: 'babel-eslint',
     parserOptions: {
@@ -72,8 +71,7 @@ module.exports = {
         }],
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-        
+
         'indent': ['error', 4],
     },
->>>>>>> 037d01d13a274fb320e19211352fd81ea4a682a1
 };

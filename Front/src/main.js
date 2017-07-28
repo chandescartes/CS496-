@@ -12,9 +12,5 @@ new Vue({
     el: '#app',
     router,
     template: '<App/>',
-<<<<<<< HEAD
     components: {App},
-=======
-    components: { App },
->>>>>>> 037d01d13a274fb320e19211352fd81ea4a682a1
 });

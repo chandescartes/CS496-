@@ -5,15 +5,18 @@ Vue.use(Vuex);
 
 const store = {
     state: {
-        currentStage: 0,
+        currentStage: -1,
+    },
+    getters: {
+        getCurrentStage: () => this.currentStage,
     },
     mutations: {
-        updateStage(state, stage) {
+        updateStage (state, stage) {
             state.currentStage = stage;
         },
     },
     actions: {
-        updateStage({ commit }, stage) {
+        updateStage ({ commit }, stage) {
             commit('updateStage', stage);
         },
     },

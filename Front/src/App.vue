@@ -1,10 +1,10 @@
 <template>
     <div id="app">
+        <HeaderBar></HeaderBar>
         <div class="sidebar no-padding">
             <Navigation></Navigation>
         </div>
         <div class="main-content no-padding">
-            <HeaderBar></HeaderBar>
             <router-view></router-view>
         </div>
     </div>
@@ -26,19 +26,19 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         /*text-align: center;*/
-        background-color: cyan;
+        background-color: white;
         color: #2c3e50;
         height: 100vh;
     }
 
     .sidebar {
         position: fixed;
-
         width: 250px;
     }
 
     .main-content {
         margin-left: 250px;
+        margin-top: 30px;
     }
 
     .no-padding {

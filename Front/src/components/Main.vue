@@ -1,6 +1,8 @@
 <template>
     <div class="main">
-        <p>asdf</p>
+        <p>{{ $store.state.currentStage }} asddf </p>
+        <p>{{ currentStage }}</p>
+        <p>hi~</p>
         <button type="button" class="btn">Basic</button>
     </div>
 </template>
@@ -9,7 +11,7 @@
     import { mapState } from 'vuex';
 
     export default {
-        data() {
+        data () {
             return {};
         },
         computed: {
@@ -17,14 +19,19 @@
                 currentStage: 'currentStage',
             }),
         },
+        mounted: () => {
+            console.log(this.currentStage);
+            this.current = 143;
+        },
     };
 </script>
 
 <style scoped>
     .main {
-        margin: 0 6vw 0 6vw;
+        margin: 0 30px 0 30px;
         background-color: white;
-        border-radius: 10px;
+        /*border-radius: 10px;*/
         padding: 15px;
+        /*box-shadow: 0 0 20px whitesmoke;*/
     }
 </style>

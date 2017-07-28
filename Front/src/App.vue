@@ -1,23 +1,48 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+    <div id="app">
+        <div class="sidebar no-padding">
+            <Navigation></Navigation>
+        </div>
+        <div class="main-content no-padding">
+            <HeaderBar></HeaderBar>
+            <router-view></router-view>
+        </div>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-};
+    import Navigation from './components/Navigation';
+    import HeaderBar from './components/HeaderBar';
+
+    export default {
+        name: 'app',
+        components: { Navigation, HeaderBar },
+    };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /*text-align: center;*/
+        background-color: cyan;
+        color: #2c3e50;
+        height: 100vh;
+    }
+
+    .sidebar {
+        position: fixed;
+
+        width: 250px;
+    }
+
+    .main-content {
+        margin-left: 250px;
+    }
+
+    .no-padding {
+        padding: 0px;
+    }
+
 </style>

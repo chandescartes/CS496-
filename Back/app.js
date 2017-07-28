@@ -11,14 +11,14 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static('public'));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(session({
     secret: '@#$%^&*($)',
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
 }));
 
-app.listen(80, function() {
+app.listen(80, function () {
     console.log('Connected at 80');
 });
 

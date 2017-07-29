@@ -1,16 +1,19 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+import { sync } from 'vuex-router-sync';
+
 import App from './App';
+import store from './store';
 import router from './router';
 
-Vue.config.productionTip = false;
+sync(store, router);
 
-Vue.use(Vuex);
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
     router,
+    store,
     template: '<App/>',
     components: { App },
 });

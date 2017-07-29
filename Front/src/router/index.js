@@ -1,15 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Main from '@/components/Main';
+import Welcome from '@/components/Welcome';
+import Lesson1 from '@/components/Lesson1';
 
 Vue.use(Router);
 
 export default new Router({
     routes: [
-        {
-            path: '/',
-            name: 'Main',
-            component: Main,
-        },
+        { path: '/', component: Welcome },
+        { path: '/lesson1', component: Lesson1 },
     ],
 });

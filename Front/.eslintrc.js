@@ -73,5 +73,8 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
 
         'indent': ['error', 4],
+        'no-console': 0,
+        'no-param-reassign': ['error', { 'props': false }],
+        'space-before-function-paren': ['error', 'always',],
     },
 };

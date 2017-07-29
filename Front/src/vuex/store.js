@@ -8,12 +8,12 @@ const store = {
         currentStage: 0,
     },
     mutations: {
-        updateStage(state, stage) {
+        updateStage (state, stage) {
             state.currentStage = stage;
         },
     },
     actions: {
-        updateStage({ commit }, stage) {
+        updateStage ({ commit }, stage) {
             commit('updateStage', stage);
         },
     },

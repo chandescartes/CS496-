@@ -5,19 +5,26 @@ Vue.use(Vuex);
 
 const store = {
     state: {
-        currentStage: -1,
+        currentLesson: 0,
+        lessons: [
+            { title: 'Welcome', timeLeft: '15', route: '/' },
+            { title: 'Staff Notation', timeLeft: '12', route: '/lesson1' },
+            { title: 'Pitch', timeLeft: '09', route: '/lesson1' },
+            { title: 'Duration', timeLeft: '06', route: '/lesson1' },
+            { title: 'Beat', timeLeft: '03', route: '/lesson1' },
+        ],
     },
     getters: {
-        getCurrentStage: () => this.currentStage,
+        getCurrentLesson: state => state.lessons[state.currentLesson],
     },
     mutations: {
-        updateStage (state, stage) {
-            state.currentStage = stage;
+        updateLesson (state, lesson) {
+            state.currentLesson = lesson;
         },
     },
     actions: {
-        updateStage ({ commit }, stage) {
-            commit('updateStage', stage);
+        updateLesson ({ commit }, lesson) {
+            commit('updateLesson', lesson);
         },
     },
 };

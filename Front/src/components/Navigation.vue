@@ -1,33 +1,31 @@
 <template>
     <div id="navigation">
-        <button class="btn element" :class="{'element-active': currentStage >= index}" v-for="(stage, index) in stages">
-            {{ stage.message }}
+        <button class="btn element"
+                :class="{'passed-lesson': currentLesson > index, 'current-lesson': currentLesson === index}"
+                @click="updateLesson(index); $router.push(lesson.route)"
+                v-for="(lesson, index) in lessons">
+            {{ index }}. {{ lesson.title }}
         </button>
     </div>
 </template>
 
 <script>
-    import { mapState } from 'vuex';
+    import { mapState, mapActions } from 'vuex';
 
     export default {
         data () {
-            return {
-                stages: [
-                    { message: 'Welcome' },
-                    { message: 'Stage 1' },
-                    { message: 'Stage 2' },
-                    { message: 'Stage 3' },
-                ],
-            };
+            return {};
         },
         computed: {
             ...mapState({
-                currentStage: 'currentStage',
+                currentLesson: 'currentLesson',
+                lessons: 'lessons',
             }),
         },
         methods: {
-            isFinished: mStage => (mStage <= this.currentStage),
-            tmp: () => 0,
+            ...mapActions([
+                'updateLesson',
+            ]),
         },
     };
 </script>
@@ -35,7 +33,6 @@
 <style scoped>
     #navigation {
         height: 100vh;
-        /*padding: 20px;*/
         #background-color: #ededed;
         background-color: white;
         border-right: solid lightgray;
@@ -46,19 +43,27 @@
         width: 100%;
         height: 50px;
         background-color: transparent;
-        color: #7d4627;
-        font-family: Arial;
+        font-family: SansSerif;
+        font-size: 15px;
         border-radius: 0;
+        padding-left: 20px;
+        text-align: left;
     }
 
-    .element-active {
-        /*background-color: darkgray;*/
-        background-color: #edd9c0;
-    ;
+    .passed-lesson {
+        background-color: #e1e8f0;
+        color: darkgray;
+    }
+
+    .current-lesson {
+        background-color: #dde0e4;
+        font-weight: bold;
+        border-top: solid 2px lightgray;
+        border-bottom: solid 2px lightgray;
     }
 
     .element:focus {
         outline: 0;
-        background-color: darkgray;
+        outline-offset: 0;
     }
 </style>

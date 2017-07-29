@@ -37,8 +37,7 @@
     }
 
     .main-content {
-        margin-left: 250px;
-        margin-top: 30px;
+        margin: 30px 30px 30px 280px;
     }
 
     .no-padding {

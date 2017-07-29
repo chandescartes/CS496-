@@ -1,25 +1,40 @@
 <template>
     <nav class="navbar navbar-default my-navbar">
         <div class="navbar-header">
-            <a class="navbar-brand my-color no-hover" href="#">Brand</a>
+            <a class="navbar-brand my-color no-hover" href="#">{{ getCurrentLesson.title }}</a>
         </div>
         <div class="navbar-collapse collapse no-hover">
             <ul class="nav navbar-nav navbar-left">
-                <li><a class="no-hover" style="color:white">Left</a></li>
+                <li><a class="no-hover" style="color:white">
+                    <img width="20px" src="../assets/logo.png" style="margin-right: 10px"/>A2A
+                </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="no-hover" style="color:white">Right</a></li>
+                <li><a class="no-hover" style="color:white">
+                    <span class="glyphicon glyphicon-hourglass"></span>
+                    {{ getCurrentLesson.timeLeft }} Minutes Remaining
+                </a></li>
             </ul>
         </div>
     </nav>
 </template>
 
 <script>
+    import { mapState, mapGetters } from 'vuex';
+
     export default {
         data () {
             return {
                 remainingTime: 10,
             };
+        },
+        computed: {
+            ...mapState({
+                currentLesson: 'currentLesson',
+            }),
+            ...mapGetters({
+                getCurrentLesson: 'getCurrentLesson',
+            }),
         },
     };
 </script>
@@ -45,7 +60,7 @@
         color: white;
     }
 
-    .my-hover {
-        cursor: none;
+    .no-hover {
+        /*cursor: none;*/
     }
 </style>

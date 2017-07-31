@@ -1,7 +1,10 @@
 <template>
     <nav class="navbar navbar-default my-navbar">
         <div class="navbar-header">
-            <a class="navbar-brand my-color no-hover" href="#">{{ getCurrentLesson.title }}</a>
+            <a class="navbar-brand my-color no-hover"
+                @click="/*updateLesson(0); $router.push('/')*/">
+                {{ getCurrentLesson.title }}
+            </a>
         </div>
         <div class="navbar-collapse collapse no-hover">
             <ul class="nav navbar-nav navbar-left">
@@ -20,7 +23,7 @@
 </template>
 
 <script>
-    import { mapState, mapGetters } from 'vuex';
+    import { mapState, mapGetters, mapActions } from 'vuex';
 
     export default {
         data () {
@@ -35,6 +38,11 @@
             ...mapGetters({
                 getCurrentLesson: 'getCurrentLesson',
             }),
+        },
+        methods: {
+            ...mapActions([
+                'updateLesson',
+            ]),
         },
     };
 </script>

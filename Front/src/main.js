@@ -3,6 +3,7 @@ import { sync } from 'vuex-router-sync';
 
 import axios from 'axios';
 import VueAxios from 'vue-axios';
+import AudioSynth from 'audiosynth';
 
 import App from './App';
 import store from './store';

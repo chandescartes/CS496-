@@ -3,14 +3,14 @@
         <button class="btn element"
                 :class="{'passed-lesson': currentLesson > index, 'current-lesson': currentLesson === index}"
                 @click="updateLesson(index); $router.push(lesson.route)"
-                v-for="(lesson, index) in lessons">
+                v-for="(lesson, index) in getLessons">
             {{ index }}. {{ lesson.title }}
         </button>
     </div>
 </template>
 
 <script>
-    import { mapState, mapActions } from 'vuex';
+    import { mapState, mapGetters, mapActions } from 'vuex';
 
     export default {
         data () {
@@ -19,12 +19,17 @@
         computed: {
             ...mapState({
                 currentLesson: 'currentLesson',
+                language: 'language',
                 lessons: 'lessons',
+            }),
+            ...mapGetters({
+                getLessons: 'getLessons',
             }),
         },
         methods: {
             ...mapActions([
                 'updateLesson',
+                'updateLocale',
             ]),
         },
     };

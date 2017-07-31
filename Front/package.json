@@ -16,11 +16,8 @@
   "dependencies": {
     "vue": "^2.3.3",
     "vue-router": "^2.6.0",
-    "vuex": "^2.3.1",
-      "vuex": "latest",
-      "vuex": "latest",
-      "vuex": "latest",
-      "vuex-router-sync": "latest"
+    "vuex": "latest",
+    "vuex-router-sync": "^4.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -87,7 +84,7 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0",
-      "vuex": "latest"
+    "vuex": "latest"
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -1,22 +1,25 @@
 <template>
     <div id="app">
         <HeaderBar></HeaderBar>
-        <div class="sidebar no-padding">
+        <div class="sidebar">
             <Navigation></Navigation>
         </div>
-        <div class="main-content no-padding">
+        <div class="main-content">
             <router-view></router-view>
+            <FooterBar></FooterBar>
         </div>
+
     </div>
 </template>
 
 <script>
     import Navigation from './components/Navigation';
     import HeaderBar from './components/HeaderBar';
+    import FooterBar from './components/FooterBar';
 
     export default {
         name: 'app',
-        components: { Navigation, HeaderBar },
+        components: { Navigation, HeaderBar, FooterBar },
     };
 </script>
 
@@ -25,10 +28,8 @@
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        /*text-align: center;*/
         background-color: white;
         color: #2c3e50;
-        height: 100vh;
     }
 
     .sidebar {
@@ -37,11 +38,21 @@
     }
 
     .main-content {
-        margin: 30px 30px 30px 280px;
+        margin: 51px 30px 30px 280px;
+        padding-top: 20px;
     }
 
-    .no-padding {
-        padding: 0px;
+    .keyword {
+        font-weight: bold;
+        color: firebrick;
     }
 
+    .repeat {
+        text-decoration: underline;
+        text-decoration-color: lightgray;
+    }
+
+    .italian {
+        font-style: italic;
+    }
 </style>

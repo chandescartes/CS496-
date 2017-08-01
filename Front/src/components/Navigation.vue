@@ -1,10 +1,10 @@
 <template>
     <div id="navigation">
         <button class="btn element"
-                :class="{'passed-lesson': currentLesson > index, 'current-lesson': currentLesson === index}"
+                :class="{'passed-lesson': currentLesson > index, 'current-lesson': currentLesson == index}"
                 @click="updateLesson(index); $router.push(lesson.route)"
                 v-for="(lesson, index) in getLessons">
-            {{ index }}. {{ lesson.title }}
+            <span v-if="index != 0">{{ index }}.</span> {{ lesson.title }}
         </button>
     </div>
 </template>
@@ -40,8 +40,7 @@
         height: 100vh;
         #background-color: #ededed;
         background-color: white;
-        border-right: solid lightgray;
-        border-width: 1px;
+        border-right: solid lightgray 1px;
     }
 
     .element {

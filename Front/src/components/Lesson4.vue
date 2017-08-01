@@ -1,0 +1,45 @@
+<template>
+    <div class="main">
+        <p>
+            You may have seen vertical lines separating notes into little boxes. These boxes are called measures.
+            Each measure has the same number of beats, specified by the piece's time signature at the beginning of a line.
+        </p>
+        <p>
+            The following piece has a 4/4 time signature. This means that there are four beats in every measure,
+            and that every quarter note gets one beat.
+        </p>
+        <img class="img" src="../assets/lesson4/4-4.png" height="120px"/>
+        <p>
+            On the other hand, this piece has a 3/4 time signature. You can check that each measure has only three beats,
+            with each beat being a quarter note again.
+        </p>
+        <img class="img" src="../assets/lesson4/3-4.png" height="120px"/>
+    </div>
+</template>
+
+<script>
+    export default {
+        data () {
+            return {};
+        },
+        mounted: () => {
+            window.scrollTo(0, 0);
+        }
+    };
+</script>
+
+<style scoped>
+    .main {
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .img {
+        margin: 10px 0 0 0;
+    }
+</style>

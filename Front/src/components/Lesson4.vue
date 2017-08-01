@@ -11,13 +11,23 @@
                 This means that there are <span class="repeat">four beats</span> in every <span class="repeat">measure</span>,
                 and that every <span class="repeat">quarter note</span> gets <span class="repeat">one beat</span>.
             </p>
-            <img class="img" src="../assets/lesson4/4-4.png" height="120px"/>
+            <div class="sheet-music">
+                <img class="img" src="../assets/lesson4/4-4.png" height="120px"/>
+                <div class="overlap">
+                    <div class="gray" @click="playTrack('4-4')">click to play</div>
+                </div>
+            </div>
             <p>
                 On the other hand, this piece has a <span class="keyword">3/4 time signature</span>.
                 You can check that each <span class="repeat">measure</span> has only <span class="repeat">three beats</span>,
                 with each beat being a <span class="repeat">quarter note</span> again.
             </p>
-            <img class="img" src="../assets/lesson4/3-4.png" height="120px"/>
+            <div class="sheet-music">
+                <img class="img" src="../assets/lesson4/3-4.png" height="120px"/>
+                <div class="overlap">
+                    <div class="gray" @click="playTrack('3-4')">click to play</div>
+                </div>
+            </div>
         </div>
         <div id="korlesson" v-else>
             <p>
@@ -26,11 +36,21 @@
             <p>
                     4분의 4박자는 모든 마디의 음표들 길이의 합이 4박자임을 의미합니다. 즉, 한 마디 안에서 네 박자가 연주되거나, 쉬게 됩니다.
             </p>
-            <img class="img" src="../assets/lesson4/4-4.png" height="120px" />
+            <div class="sheet-music">
+                <img class="img" src="../assets/lesson4/4-4.png" height="120px"/>
+                <div class="overlap">
+                    <div class="gray" @click="playTrack('4-4')">click to play</div>
+                </div>
+            </div>
             <p>
                     아래 악보는 위 악보와는 달리 4분의 3박자로 구성되어 있습니다. 4분의 3박자에서는 한 마디안에 세 박자의 음이 나타납니다. 4분의 3박자는 주로 왈츠 등의 곡에서 사용됩니다.
             </p>
-            <img class="img" src="../assets/lesson4/3-4.png" height="120px" />
+            <div class="sheet-music">
+                <img class="img" src="../assets/lesson4/3-4.png" height="120px"/>
+                <div class="overlap">
+                    <div class="gray" @click="playTrack('3-4')">click to play</div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -51,6 +71,15 @@ export default {
         ...mapGetters({
             getCurrentLesson: 'getCurrentLesson',
         }),
+    },
+    methods: {
+        playTrack: (track) => {
+            if (this.currentTrack != null) {
+                this.currentTrack.pause();
+            }
+            this.currentTrack = new Audio(`../static/${track}.mp3`);
+            this.currentTrack.play();
+        },
     },
     components: {
         FooterBar,
@@ -74,5 +103,24 @@ export default {
 
     .img {
         margin: 10px 0 0 0;
+    }
+
+    .sheet-music {
+        border: solid 3px whitesmoke;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .overlap {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .gray {
+        background-color: whitesmoke;
+        color: lightgray;
+        height: 20px;
+        width: 80px;
+        cursor: pointer;
     }
 </style>

@@ -40,11 +40,26 @@
         <div id="korlesson" v-else>
             <div class="inline-block img-duration"><img src="../assets/lesson3/duration.jpg" height="300px" /></div>
             <p><span class="keyword">음의 길이</span>는 음을 얼마나 길게 연주해야 하는지를 나타낸다. 크게 5개의 종류가 있는데:</p>
-            <p class="list"><span class="keyword">4분 음표</span> 는 한 박.</p>
-            <p class="list"><span class="keyword">2분 음표</span>는 두 박, 이 때 2분 음표는 2개의 <span class="repeat">4분 음표</span>와 길이가 같다.</p>
-            <p class="list"><span class="keyword">온 음표</span>는 네 박, 이 때 온 음표는 4개의 <span class="repeat">4분 음표</span>와 길이가 같다.</p>
-            <p class="list"><span class="keyword">8분 음표</span>는 <span class="repeat">4분 음표</span>의 절반, 즉 반 박자.</p>
-            <p class="list"><span class="keyword">16분 음표</span>는 <span class="repeat">8분 음표</span>의 절반, 즉 반의 반박자를 나타낸다.</p>
+            <p class="list">
+                <span class="keyword">4분 음표</span> 는 한 박.
+                <button class="btn no-focus" @click="playTrack('quarter')"><span class="glyphicon glyphicon-play"></span></button>
+            </p>
+            <p class="list"><span class="keyword">
+                2분 음표</span>는 두 박, 이 때 2분 음표는 2개의 <span class="repeat">4분 음표</span>와 길이가 같다.
+                <button class="btn no-focus" @click="playTrack('half')"><span class="glyphicon glyphicon-play"></span></button>
+            </p>
+            <p class="list">
+                <span class="keyword">온 음표</span>는 네 박, 이 때 온 음표는 4개의 <span class="repeat">4분 음표</span>와 길이가 같다.
+                <button class="btn no-focus" @click="playTrack('whole')"><span class="glyphicon glyphicon-play"></span></button>
+            </p>
+            <p class="list">
+                <span class="keyword">8분 음표</span>는 <span class="repeat">4분 음표</span>의 절반, 즉 반 박자.
+                <button class="btn no-focus" @click="playTrack('eighth')"><span class="glyphicon glyphicon-play"></span></button>
+            </p>
+            <p class="list">
+                <span class="keyword">16분 음표</span>는 <span class="repeat">8분 음표</span>의 절반, 즉 반의 반박자를 나타낸다.
+                <button class="btn no-focus" @click="playTrack('sixteenth')"><span class="glyphicon glyphicon-play"></span></button>
+            </p>
 
             <p>보시다시피 줄기에 꼬리를 하나씩 달 때 마다 <span class="repeat">음의 길이</span>가 절반씩 줄어듭니다. 음의 길이를 줄이기 위해 꼬리를 계속 추가할 수 있습니다.</p>
             <p><span class="keyword">쉼표</span> 또한 음악에서 중요한 역할을 합니다. <span class="repeat">쉼표</span>는 얼마동안 연주를 쉬어야 하는지를 나타냅니다.</p>

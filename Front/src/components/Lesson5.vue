@@ -54,7 +54,12 @@
             <p>
                 이제 라(레) 장조 장음계를 살펴봅시다. 아래의 라 장조 장음계가 위와 같은 패턴을 보이는지 체크해보세요!
             </p>
-            <img class="img" src="../assets/lesson5/dmajor.png" height="120px"/>
+            <div class="sheet-music">
+                <img class="img" src="../assets/lesson5/dmajor.png" height="120px"/>
+                <div class="overlap">
+                    <div class="gray" @click="playTrack('dmajor')">click to play</div>
+                </div>
+            </div>
             <p>
                 우리는 라 장조로 작곡된 음악을 연주할 때, 무의식적으로 라장조 장음계를 연주하게 됩니다. 하지만 반음마다 샾과 플랫을 그려줘야 한다면 작곡가나, 연주자 모두 지치겠죠? 그래서 음자리표 옆에 어떤 음을 반음 올리거나, 내려야 하는지 조표로 적어주게 됩니다.
             </p>
@@ -125,10 +130,6 @@
         border: solid 3px whitesmoke;
         margin-top: 20px;
         text-align: center;
-    }
-
-    .subtext {
-        color: darkgray;
     }
 
     .overlap {

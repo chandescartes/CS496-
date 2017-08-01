@@ -6,6 +6,14 @@
                 v-for="(lesson, index) in getLessons">
             <span v-if="index != 0">{{ index }}.</span> {{ lesson.title }}
         </button>
+        <button class="btn my-btn" v-if="isEnglish" @click="changeLanguage()">
+            <img src="../assets/korean.svg" height="30px"/>
+            한국어
+        </button>
+        <button class="btn btn-secondary my-btn" v-if="!isEnglish" @click="changeLanguage()">
+            <img src="../assets/english.svg" height="30px"/>
+            English
+        </button>
     </div>
 </template>
 
@@ -25,12 +33,19 @@
             ...mapGetters({
                 getLessons: 'getLessons',
             }),
+            isEnglish: function () {
+                return this.language === 'eng';
+            },
         },
         methods: {
             ...mapActions([
                 'updateLesson',
                 'updateLocale',
             ]),
+            changeLanguage: function () {
+                if (this.language === 'eng') this.updateLocale('kor');
+                else this.updateLocale('eng');
+            },
         },
     };
 </script>
@@ -66,8 +81,16 @@
         border-bottom: solid 2px lightgray;
     }
 
-    .element:focus {
+    .element:focus, .my-btn:focus {
         outline: 0;
         outline-offset: 0;
+    }
+
+    .my-btn {
+        margin: 20px;
+        width: 210px;
+        font-weight: bold;
+        background-color: white;
+        border: solid 2px black;
     }
 </style>

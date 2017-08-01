@@ -1,16 +1,20 @@
 <template>
     <div class="main">
         <p>
-            We learned the duration of individual notes, but how do you know how long to hold a beat? Tempo tells us this.</p>
+            We learned the <span class="repeat">duration</span> of individual notes,
+            but how do you know how long to hold a <span class="repeat">beat</span>?
+            <span class="keyword">Tempo</span> tells us this.</p>
         <p>
-            We can use beats per minute (BPM), but we can also specify a range of BPM to give some freedom to the player.
+            We can use <span class="keyword">beats per minute</span> (BPM),
+            but we can also specify a <span class="keyword">range of BPM</span> to give some freedom to the player.
         </p>
         <p>
-            For example, in this excerpt from Mozart's piano sonata, the left part is marked as Allegro, or about 144 quarter notes per minute,
-            and the right part is marked as Adagio, or about 60 eighth notes per minute.
+            For example, in this excerpt from <span class="repeat">Mozart</span>'s <span class="repeat">piano sonata</span>,
+            the left part is marked as <span class="keyword">Allegro</span>, or about <span class="keyword">144 quarter notes per minute</span>,
+            and the right part is marked as <span class="keyword">Adagio</span>, or about <span class="keyword">60 eighth notes per minute</span>.
         </p>
         <img class="img" src="../assets/lesson6/tempo.png" height="200px"/>
-        <p>These are some commonly used tempo markings, and some sample pieces to give you a feeling of each.</p>
+        <p>These are some commonly used <span class="repeat">tempo</span> markings, and some sample pieces to give you a feeling of each.</p>
         <table class="table">
             <thead>
             <tr>
@@ -46,9 +50,9 @@
             </tbody>
         </table>
         <p>
-            Changes in tempo can be notated anywhere in the music as well. For example, <span class="italian">ritardando</span>,
-            or <span class="italian">rit.</span>, means to slow down gradually,
-            whereas <span class="italian">accelerando</span>, or <span class="italian">accel.</span>, means to speed up gradually.
+            Changes in <span class="repeat">tempo</span> can be notated anywhere in the music as well. For example, <span class="italian keyword">ritardando</span>,
+            or <span class="italian keyword">rit.</span>, means to slow down gradually,
+            whereas <span class="italian keyword">accelerando</span>, or <span class="italian keyword">accel.</span>, means to speed up gradually.
         </p>
     </div>
 </template>

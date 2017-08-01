@@ -1,8 +1,9 @@
 <template>
     <div class="main">
         <p>
-            We can play the same note softly or loudly and it will sound entirely different. Dynamics is how loud or quiet the sound is.</p>
-        <p>Here are some common dynamic levels:</p>
+            We can play the same note softly or loudly and it will sound entirely different.
+            <span class="keyword">Dynamics</span> is how loud or quiet the sound is.</p>
+        <p>Here are some common <span class="repeat">dynamic</span> levels:</p>
         <table class="table">
             <thead>
             <tr class="italian">
@@ -26,12 +27,14 @@
             </tbody>
         </table>
         <p>
-            Changes in dynamics can also be marked anywhere in the music. For example, <span class="italian">crescendo</span>,
-            or <span class="italian">cresc.</span>, means to get gradually louder,
-            whereas <span class="italian">diminuendo</span>, or <span class="italian">dim.</span>, means to get gradually softer.
+            Changes in <span class="keyword">dynamics</span> can also be marked anywhere in the music.
+            For example, <span class="italian keyword">crescendo</span>,
+            or <span class="italian keyword">cresc.</span>, means to get gradually louder,
+            whereas <span class="italian keyword">diminuendo</span>, or <span class="italian keyword">dim.</span>, means to get gradually softer.
         </p>
         <p>
-            Emphasis on individual notes is placed with an accent or the <span class="italian">sforzando</span> (<span class="italian">sf.</span>) mark.
+            Emphasis on individual notes is placed with an <span class="keyword">accent</span> or the <span class="italian keyword">sforzando</span>
+            (<span class="italian keyword">sf.</span>) mark.
             This note should be played significantly more strongly than others.
         </p>
         <img src="../assets/lesson7/accent.png" height="150px"/>

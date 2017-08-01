@@ -1,18 +1,37 @@
 <template>
     <div class="main">
         <div class="inline-block img-duration"><img src="../assets/lesson3/duration.jpg" height="300px"/></div>
-        <p><span class="keyword">Duration</span> is how long the note is held for. Here are the five most common ones:</p>
-        <p class="list">A <span class="keyword">quarter note</span> is one beat.</p>
-        <p class="list">A <span class="keyword">half note</span> is two beats, equivalent to two <span class="repeat">quarter notes</span>.</p>
-        <p class="list">A <span class="keyword">whole note</span> is four beats, equivalent to four <span class="repeat">quarter notes</span>.</p>
-        <p class="list">An <span class="keyword">Eighth note</span> is half of a <span class="repeat">quarter note</span>.</p>
-        <p class="list">A <span class="keyword">sixteenth note</span> is half of an <span class="repeat">eighth note</span>.</p>
-
-        <p>As you can see, adding a flag halves the <span class="repeat">duration</span>. You can keep adding flags to shorten the note.</p>
-        <p><span class="keyword">Rests</span> are also important in music. The chart shows us how to notate <span class="repeat">rests</span> in various durations.</p>
+        <p>
+            <span class="keyword">Duration</span> is how long the note is held for. Here are the five most common ones:
+        </p>
+        <p class="list">
+            A <span class="keyword">quarter note</span> is one beat.
+            <button class="btn no-focus" @click="playTrack('quarter')"><span class="glyphicon glyphicon-play"></span></button>
+        </p>
+        <p class="list">
+            A <span class="keyword">half note</span> is two beats, equivalent to two <span class="repeat">quarter notes</span>.
+            <button class="btn no-focus" @click="playTrack('half')"><span class="glyphicon glyphicon-play"></span></button>
+        </p>
+        <p class="list">
+            A <span class="keyword">whole note</span> is four beats, equivalent to four <span class="repeat">quarter notes</span>.
+            <button class="btn no-focus" @click="playTrack('whole')"><span class="glyphicon glyphicon-play"></span></button>
+        </p>
+        <p class="list">
+            An <span class="keyword">Eighth note</span> is half of a <span class="repeat">quarter note</span>.
+            <button class="btn no-focus" @click="playTrack('eighth')"><span class="glyphicon glyphicon-play"></span></button>
+        </p>
+        <p class="list">
+            A <span class="keyword">sixteenth note</span> is half of an <span class="repeat">eighth note</span>.
+            <button class="btn no-focus" @click="playTrack('sixteenth')"><span class="glyphicon glyphicon-play"></span></button>
+        </p>
+        <p>As you can see, adding a flag halves the <span class="repeat">duration</span>. You can keep adding flags to shorten the note.
+        </p>
+        <p><span class="keyword">Rests</span> are also important in music. The chart shows us how to notate <span
+            class="repeat">rests</span> in various durations.</p>
         <p>Consecutive flags can be joined to create beams: </p>
         <img src="../assets/lesson3/beaming.png" height="80px"/>
-        <p>A <span class="keyword">dot</span> next to a note adds another half of that note's <span class="repeat">duration</span> to it:</p>
+        <p>A <span class="keyword">dot</span> next to a note adds another half of that note's <span class="repeat">duration</span>
+            to it:</p>
         <img src="../assets/lesson3/dotted.png" height="80px"/>
         <p>You can also tie notes together to extend notes:</p>
         <img src="../assets/lesson3/tied.png" height="70px"/>
@@ -20,13 +39,24 @@
 </template>
 
 <script>
+    import Piano from './Piano';
+
     export default {
         data () {
             return {};
         },
-        mounted: () => {
+        methods: {
+            playTrack: (track) => {
+                if (this.currentTrack != null) {
+                    this.currentTrack.pause();
+                }
+                this.currentTrack = new Audio(`../static/${track}.mp3`);
+                this.currentTrack.play();
+            },
+        },
+        mounted: function () {
             window.scrollTo(0, 0);
-        }
+        },
     };
 </script>
 
@@ -59,5 +89,10 @@
     .img-duration {
         margin: 0 20px 0 20px;
         float: right;
+    }
+
+    .no-focus:focus {
+        outline: 0;
+        outline-offset: 0;
     }
 </style>

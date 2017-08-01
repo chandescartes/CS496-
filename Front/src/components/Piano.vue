@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    data() {
+    data () {
         return {
             player: undefined,
             audioContext: undefined,
@@ -79,8 +79,6 @@ export default {
                 'A': 9,
                 'B': 11,
             };
-
-            var picth = 0;
 
             let code = parseInt(base[note[0]]);
             let octave = parseInt(note[1]);

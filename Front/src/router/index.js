@@ -10,7 +10,8 @@ import Lesson6 from '@/components/Lesson6';
 import Lesson7 from '@/components/Lesson7';
 import Lesson8 from '@/components/Lesson8';
 
-
+import PianoToSheet from '@/components/PianoToSheet';
+import Piano from '@/components/Piano';
 
 Vue.use(Router);
 
@@ -25,5 +26,7 @@ export default new Router({
         { path: '/lesson6', component: Lesson6 },
         { path: '/lesson7', component: Lesson7 },
         { path: '/lesson8', component: Lesson8 },
+        { path: '/pts', component: PianoToSheet },
+        { path: '/piano', component: Piano },
     ],
 });

@@ -2,30 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e57d8784-8382-43ad-b51e-578aa1f8f646" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/3-4.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/legato.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/repeat.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/staccato.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/css/app.34359b0fb57fca1dc0970549561f1c1e.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/css/app.34359b0fb57fca1dc0970549561f1c1e.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/js/app.522caf926c6e9afa853d.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/js/manifest.5b6a285707766c272402.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Back/public/static/js/vendor.dcb91dcf68648875103c.js.map" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/css/app.bc01bc432943fd04742b1094df4dbd28.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/css/app.bc01bc432943fd04742b1094df4dbd28.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/app.e6861a75ccd6511ea149.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/manifest.46c5b3f9924af0c06440.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/vendor.71cecb2ec69351e83b02.js.map" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Back/public/static/img/english.2741439.svg" afterPath="$PROJECT_DIR$/Back/public/static/img/english.cbfe8d8.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Back/public/static/js/app.e6861a75ccd6511ea149.js" afterPath="$PROJECT_DIR$/Back/public/static/js/app.522caf926c6e9afa853d.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Back/public/static/js/manifest.46c5b3f9924af0c06440.js.map" afterPath="$PROJECT_DIR$/Back/public/static/js/manifest.5b6a285707766c272402.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Back/public/static/js/vendor.71cecb2ec69351e83b02.js" afterPath="$PROJECT_DIR$/Back/public/static/js/vendor.dcb91dcf68648875103c.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Back/public/static/4-4.mp3" afterPath="$PROJECT_DIR$/Back/public/static/4-4.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front/src/assets/logo.png" afterPath="$PROJECT_DIR$/Front/src/assets/logo.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/css/app.34359b0fb57fca1dc0970549561f1c1e.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/css/app.34359b0fb57fca1dc0970549561f1c1e.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/img/logo.fe501a9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/app.522caf926c6e9afa853d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/app.522caf926c6e9afa853d.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/manifest.5b6a285707766c272402.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/manifest.5b6a285707766c272402.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/vendor.dcb91dcf68648875103c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Back/public/static/js/vendor.dcb91dcf68648875103c.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Back/views/index.html" afterPath="$PROJECT_DIR$/Back/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front/src/components/FooterBar.vue" afterPath="$PROJECT_DIR$/Front/src/components/FooterBar.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front/src/components/HeaderBar.vue" afterPath="$PROJECT_DIR$/Front/src/components/HeaderBar.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Front/index.html" afterPath="$PROJECT_DIR$/Front/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +35,22 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
               <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-              <folding />
+              <folding>
+                <marker date="1501619206861" expanded="true" signature="1614:1630" ph="{&quot;currentLesson&quot;: 'currentLesson'...}" />
+                <marker date="1501619206861" expanded="true" signature="1614:1642" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="1614:2085" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="1614:2095" ph="..." />
+                <marker date="1501619206861" expanded="true" signature="1661:1952" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="1697:1941" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="1746:1812" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="1974:2008" ph="{&quot;FooterBar&quot;: FooterBar...}" />
+                <marker date="1501619206861" expanded="true" signature="2111:2644" ph="..." />
+                <marker date="1501619206861" expanded="true" signature="2123:2158" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="2166:2198" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="2216:2247" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="2266:2365" ph="{...}" />
+                <marker date="1501619206861" expanded="true" signature="2380:2412" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/Front/src/components/HeaderBar.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -120,18 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lesson6.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Front/src/components/Lesson6.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1792">
-              <caret line="112" column="14" lean-forward="false" selection-start-line="112" selection-start-column="14" selection-end-line="112" selection-end-column="14" />
-              <folding>
-                <element signature="e#4709#4745#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Lesson8.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Front/src/components/Lesson8.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,8 +136,8 @@
       <file leaf-file-name="FooterBar.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Front/src/components/FooterBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="224">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -187,7 +178,6 @@
         <option value="$PROJECT_DIR$/Front/src/store/index.js" />
         <option value="$PROJECT_DIR$/Front/src/router/index.js" />
         <option value="$PROJECT_DIR$/Front/build/webpack.base.conf.js" />
-        <option value="$PROJECT_DIR$/Front/index.html" />
         <option value="$PROJECT_DIR$/Front/src/components/Navigation.vue" />
         <option value="$PROJECT_DIR$/Front/src/components/Welcome.vue" />
         <option value="$PROJECT_DIR$/Front/src/components/Lesson6.vue" />
@@ -202,6 +192,7 @@
         <option value="$PROJECT_DIR$/Front/src/components/Lesson2.vue" />
         <option value="$PROJECT_DIR$/Front/src/components/HeaderBar.vue" />
         <option value="$PROJECT_DIR$/Front/src/components/FooterBar.vue" />
+        <option value="$PROJECT_DIR$/Front/index.html" />
       </list>
     </option>
   </component>
@@ -390,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54845000" />
+    <option name="totallyTimeSpent" value="56150000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,7 +394,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17702845" sideWeight="0.4971475" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -691,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="92" lean-forward="false" selection-start-line="5" selection-start-column="92" selection-end-line="5" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front/src/assets/korean.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -758,14 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front/src/components/Lesson8.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="97" column="17" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Front/src/components/Lesson6.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1792">
@@ -818,7 +792,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
+          <folding>
+            <marker date="1501619206861" expanded="true" signature="1614:1630" ph="{&quot;currentLesson&quot;: 'currentLesson'...}" />
+            <marker date="1501619206861" expanded="true" signature="1614:1642" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="1614:2085" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="1614:2095" ph="..." />
+            <marker date="1501619206861" expanded="true" signature="1661:1952" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="1697:1941" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="1746:1812" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="1974:2008" ph="{&quot;FooterBar&quot;: FooterBar...}" />
+            <marker date="1501619206861" expanded="true" signature="2111:2644" ph="..." />
+            <marker date="1501619206861" expanded="true" signature="2123:2158" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="2166:2198" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="2216:2247" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="2266:2365" ph="{...}" />
+            <marker date="1501619206861" expanded="true" signature="2380:2412" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -843,15 +832,31 @@
     <entry file="file://$PROJECT_DIR$/Front/src/components/HeaderBar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front/src/components/Lesson8.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1536">
+          <caret line="97" column="17" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Front/src/components/FooterBar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="224">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>

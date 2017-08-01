@@ -1,0 +1,62 @@
+<template>
+    <div class="main">
+        <p>
+            Scales is a sequence of eight notes following a pattern.
+            While there are many types of scales, we will look at the major scale for now.
+            The major scale consists of the following pattern:
+        </p>
+        <p class="pattern">
+            Whole - Whole - Half - Whole - Whole - Whole - Half
+        </p>
+        <p>
+            What does this mean? You can think of a half-step as the distance between two consecutive notes on a piano (including the black keys),
+            and a whole-step as two half-steps.
+        </p>
+        <img class="img" src="../assets/lesson5/steps.png" height="120px"/>
+        <p>
+            Now let's look at the D major scale. Check for yourself that the D major scale follows this pattern:
+        </p>
+        <img class="img" src="../assets/lesson5/dmajor.png" height="120px"/>
+        <p>
+            When we are playing a piece in D major, we are likely to play notes that are a part the scale.
+            However, putting a sharp next to every F and C in the piece would be a nightmare for both the composer and the player!
+            Therefore, we specify the key signature after the clef.
+        </p>
+        <img class="img" src="../assets/lesson5/key_signature.png" height="150px"/>
+        <p>
+            Now, every following F and C will be played as F# and C#, respectively.
+        </p>
+    </div>
+</template>
+
+<script>
+    export default {
+        data () {
+            return {};
+        },
+        mounted: () => {
+            window.scrollTo(0, 0);
+        }
+    };
+</script>
+
+<style scoped>
+    .main {
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .pattern {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .img {
+        margin: 10px 0 0 0;
+    }
+</style>

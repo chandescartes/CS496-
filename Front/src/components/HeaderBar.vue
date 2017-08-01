@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-default my-navbar">
+    <nav class="navbar navbar-default navbar-fixed-top my-navbar">
         <div class="navbar-header">
-            <a class="navbar-brand my-color no-hover" href="#">{{ getCurrentLesson.title }}</a>
+            <a class="navbar-brand my-color no-hover">{{ getCurrentLesson.title }}</a>
         </div>
         <div class="navbar-collapse collapse no-hover">
             <ul class="nav navbar-nav navbar-left">
@@ -40,8 +40,11 @@
 </script>
 
 <style scoped>
+    .navbar-right {
+        margin-right: 1px;
+    }
+
     .my-navbar {
-        /*height: 70px;*/
         border: 0;
         border-radius: 0;
         margin: 0;
@@ -51,7 +54,6 @@
     .navbar-brand {
         position: absolute;
         width: 100%;
-        /*left: 0;*/
         text-align: center;
         margin: 0 auto;
     }
@@ -61,6 +63,7 @@
     }
 
     .no-hover {
-        /*cursor: none;*/
+        pointer-events: none;
+        cursor: default;
     }
 </style>

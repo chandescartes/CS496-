@@ -6,18 +6,18 @@ Vue.use(Vuex);
 const store = {
     state: {
         currentLesson: 0,
-        language: 'eng',
+        language: 'kor',
         lessons: {
             kor: [
                 { title: '환영합니다', timeLeft: '15', route: '/' },
                 { title: '음을 표시하는 법', timeLeft: '15', route: '/lesson1' },
                 { title: '음의 높이', timeLeft: '14', route: '/lesson2' },
-                { title: '음의 길이', timeLeft: '12', route: '/lesso3' },
+                { title: '음의 길이', timeLeft: '12', route: '/lesson3' },
                 { title: '박자', timeLeft: '10', route: '/lesson4' },
-                { title: 'Scale', timeLeft: '08', route: '/lesson5' },
-                { title: 'Tempo', timeLeft: '06', route: '/lesson6' },
-                { title: 'Dynamics', timeLeft: '04', route: '/lesson7' },
-                { title: 'Other Notation', timeLeft: '02', route: '/lesson8' },
+                { title: '음계', timeLeft: '08', route: '/lesson5' },
+                { title: '템포', timeLeft: '06', route: '/lesson6' },
+                { title: '셈여림', timeLeft: '04', route: '/lesson7' },
+                { title: '다른 음악 기호들', timeLeft: '02', route: '/lesson8' },
                 // { title: 'Melody & Harmony', timeLeft: '03', route: '/lesson9' },
             ],
             eng: [

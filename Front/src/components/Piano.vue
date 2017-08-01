@@ -17,7 +17,9 @@ export default {
             player: undefined,
             audioContext: undefined,
             selectedPreset: undefined,
-            octave: ['3', '4'], //3옥에서 4옥까지 그린다.
+            octave: ['4', '5'], //4옥에서 5옥까지 그린다.
+            octaveUp : 0,
+            pitchUp : 0,
 
             keyClass : [
                 'key', 'key black black1', 'key', 'key black black3', 'key', 'key', 'key black black1', 'key', 'key black black2', 'key', 'key black black3', 'key',
@@ -30,6 +32,44 @@ export default {
             keyAccidental : [
                 '', '#', '', '#', '', '', '#', '', '#', '', '#', '',
             ],
+
+            pressKeyCode : {
+                '81' : 0, // q
+                '50' : 1, // 2
+                '87' : 2, // w
+                '51' : 3, // 3
+                '69' : 4, // e
+                '82' : 5, // r
+                '53' : 6, // 5
+                '84' : 7, // t
+                '54' : 8, // 6
+                '89' : 9, // y
+                '55' : 10, // 7
+                '85' : 11, // u
+                '73' : 12, // i
+                '57' : 13, // 9
+                '48' : 15, // 0
+                '79' : 14, // o
+                '80' : 16, // p
+                '219' : 17, // [
+                '187' : 18, // =
+                '221' : 19, // ]
+                '8' : 20, // backspace
+                '220' : 21, // \
+                '13' : 22,
+                '90' : 12, // z
+                '83' : 13, // s
+                '88' : 14, // x
+                '68' : 15, // d
+                '67' : 16, // c
+                '86' : 17, // v
+                '71' : 18, // g
+                '66' : 19, // b
+                '72' : 20, // h
+                '78' : 21, // n
+                '74' : 22, // j
+                '77' : 23, // m
+            },
         };
     },
     methods: {
@@ -61,7 +101,7 @@ export default {
         getKey(index) {
             let octaveIndex = parseInt(parseInt(index) / 12);
             let i = parseInt(index) % 12;
-            return this.keyCode[i] + this.octave[octaveIndex] + this.keyAccidental[i];
+            return this.keyCode[i] + this.keyAccidental[i] + this.octave[octaveIndex];
         },
 
         getClass(index) {
@@ -81,7 +121,7 @@ export default {
             };
 
             let code = parseInt(base[note[0]]);
-            let octave = parseInt(note[1]);
+            /*let octave = parseInt(note[1]);
             let accidental = 0;
 
             if (note.length > 2) {
@@ -92,9 +132,27 @@ export default {
                 } else if (accidental === 'b') {
                     accidental = -1;
                 }
+            }*/
+
+            let octave = 0;
+            let accidental = 0;
+
+            if(note.length > 2) { // C#3처럼 임시표 붙은 경우
+                accidental = note[1];
+                octave = parseInt(note[2]);
+
+                if(accidental === '#') {
+                    accidental = 1;
+                } else if(accidental === 'b') {
+                    accidental = -1;
+                }
+            } else {
+                octave = parseInt(note[1]);
             }
 
-            return octave * 12 + code + accidental;
+            octave += this.octaveUp;
+
+            return octave * 12 + code + accidental + this.pitchUp;
         },
 
         buffering() {
@@ -103,14 +161,46 @@ export default {
             for(let i=0; i<indexes.length; i++) {
                 this.play(this.getKey(i), 0);
             }
+
+            this.octaveUp = 1;
+            for(let i=0; i<indexes.length; i++) {
+                this.play(this.getKey(i), 0);
+            }
+
+            this.octaveUp = 0;
         },
 
         play(pitch, duration) {
             this.player.queueWaveTable(this.audioContext, this.audioContext.destination, this.selectedPreset, 0, this.getPitch(pitch), duration);
+
+            if(duration > 0) {
+                this.$emit('pressKey', pitch);
+            }
         },
     },
     mounted: function() {
         this.initPiano();
+        let pressKeyCode = this.pressKeyCode;
+        let getKey = this.getKey;
+        let play = this.play;
+        var pitchUp = this.pitchUp;
+
+        window.onkeydown = () => {
+            let keyCode = event.keyCode.toString();
+            console.log(keyCode);
+            if(keyCode in pressKeyCode) {
+                let key = getKey(pressKeyCode[event.keyCode.toString()]);
+                play(key, 1);
+            } else if(keyCode === '16') {
+                this.octaveUp = 1;
+            }
+        };
+
+        window.onkeyup = () => {
+            if(event.keyCode.toString() === '16') {
+                this.octaveUp = 0;
+            }
+        };
     },
 };
 </script>

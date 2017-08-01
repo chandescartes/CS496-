@@ -1,16 +1,8 @@
 <template>
-<div id="piano_to_sheet">
-    <!--<button class="btn element"
-                :class="{'passed-lesson': currentLesson > index, 'current-lesson': currentLesson === index}"
-                @click="updateLesson(index); $router.push(lesson.route)"
-                v-for="(lesson, index) in getLessons">
-            {{ index }}. {{ lesson.title }}
-        </button>-->
-    <div id="boo">
+    <div id="piano_to_sheet">
+        <div id="boo"></div>
+        <Piano @pressKey="pressKey"></Piano>
     </div>
-
-    <Piano @pressKey="pressKey"></Piano>
-</div>
 </template>
 
 <script>
@@ -47,8 +39,8 @@ export default {
                 accidental = key[1];
             }
 
-            if(this.notes.length + 1 > 1) {
-                this.notes.shift();
+            if(this.notes.length + 1 > 4) {
+                this.notes = [];
             }
 
             let voice = new VF.Voice({num_beats: this.notes.length + 1,  beat_value: 4});

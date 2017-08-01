@@ -231,7 +231,7 @@ body {
 
 #piano {
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     padding: 50px 40px 16px;
     width: 815px;
     background: #800000;

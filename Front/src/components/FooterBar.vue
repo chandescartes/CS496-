@@ -35,13 +35,13 @@
                             <span v-else>당신은 이제 악보를 읽을 수 있게 되었습니다.</span>
                         </p>
                         <p v-if="language ==='eng'">
-                            But don't stop here. Start playing <a href="https://musescore.com/sheetmusic">your favorite songs and pieces</a>,
-                            or continue learning <a href="https://www.musictheory.net/">music theory</a> and
+                            But don't stop here. Start playing <a target="_blank" href="https://musescore.com/sheetmusic">your favorite songs and pieces</a>,
+                            or continue learning <a target="_blank" href="https://www.musictheory.net/">music theory</a> and
                             <a href="https://www.artofcomposing.com/how-to-compose-music-101">composition</a>.
                         </p>
                         <p v-else>
-                            하지만 이게 끝이 아닙니다. <a href="https://musescore.com/sheetmusic">your favorite songs and pieces</a>에서 당신이 가장 좋아하는 음악을 연주해보세요,
-                                또는 <a href="https://www.musictheory.net/">music theory</a>에서 공부를 이어가세요.
+                            하지만 이게 끝이 아닙니다. <a target="_blank" href="https://musescore.com/sheetmusic">your favorite songs and pieces</a>에서 당신이 가장 좋아하는 음악을 연주해보세요,
+                                또는 <a target="_blank" href="https://www.musictheory.net/">music theory</a>에서 공부를 이어가세요.
                         </p>
                         <p v-if="language ==='eng'">This is it from us. Thank you for taking part of our tutorial.</p>
                         <p v-else>A2A에 관심을 가져주셔서 감사합니다.</p>

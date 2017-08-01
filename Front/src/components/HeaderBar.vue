@@ -12,7 +12,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="no-hover" style="color:white">
                     <span class="glyphicon glyphicon-hourglass"></span>
-                    {{ getCurrentLesson.timeLeft }} Minutes Remaining
+
+                    {{ getCurrentLesson.timeLeft }} <span v-if="language === 'eng'">Minutes Remaining</span><span v-else>분 남았습니다.</span>
                 </a></li>
             </ul>
         </div>
@@ -31,6 +32,7 @@
         computed: {
             ...mapState({
                 currentLesson: 'currentLesson',
+                language: 'language',
             }),
             ...mapGetters({
                 getCurrentLesson: 'getCurrentLesson',

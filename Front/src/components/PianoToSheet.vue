@@ -47,7 +47,7 @@ export default {
                 accidental = key[1];
             }
 
-            if(this.notes.length + 1 > 4) {
+            if(this.notes.length + 1 > 1) {
                 this.notes.shift();
             }
 

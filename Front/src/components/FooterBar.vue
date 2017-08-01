@@ -45,11 +45,15 @@
                         </p>
                         <p v-if="language ==='eng'">This is it from us. Thank you for taking part of our tutorial.</p>
                         <p v-else>A2A에 관심을 가져주셔서 감사합니다.</p>
+                        <div class="div-logo">
+                            <img src="../assets/logo.png" class="logo"/>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <h6 style="float:left">By Sanghyun Lee and Chan Ryu</h6>
                         <button type="button" class="btn btn-default" @click="updateLesson(0); $router.push(getLessons[currentLesson].route)" data-dismiss="modal">Close</button>
                     </div>
+
                 </div>
 
             </div>
@@ -112,5 +116,14 @@
 
     p {
         font-size: 20px;
+    }
+
+    .div-logo {
+        background-color: skyblue;
+    }
+
+    .logo {
+        height: 100px;
+        margin: 20px;
     }
 </style>

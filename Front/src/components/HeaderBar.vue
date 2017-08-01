@@ -6,7 +6,7 @@
         <div class="navbar-collapse collapse no-hover">
             <ul class="nav navbar-nav navbar-left">
                 <li><a class="no-hover" style="color:white">
-                    <img width="20px" src="../assets/logo.png" style="margin-right: 10px"/>A2A
+                    <img height="20px" src="../assets/logo.png" style="margin-right: 10px"/>
                 </a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

@@ -1,0 +1,7 @@
+lesson0=환영합니다.
+lesson1=음을 표시하는 법
+lesson2=음의 높이
+lesson3=음의 길이
+lesson4=박자
+lesson5=스케일
+lesson6=템포

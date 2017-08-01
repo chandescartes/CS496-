@@ -10,7 +10,7 @@ module.exports = {
             if (err) {
                 console.log(err);
             } else {
-                db.collection('resString').find({
+                db.collection('resString').findOne({
                     'language': language,
                     'lesson': lesson
                 }, (err, ele) => {

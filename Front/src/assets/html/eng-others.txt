@@ -1,0 +1,7 @@
+lesson0=Welcome
+lesson1=Staff Notation
+lesson2=Pitch
+lesson3=Duration
+lesson4=Beat
+lesson5=Scale
+lesson6=Tempo
